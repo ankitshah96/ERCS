@@ -1,0 +1,273 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Site.master.cs" Inherits="SiteMaster" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 4.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head runat="server">
+    <title></title>
+    <script type="text/javascript" language="javascript">
+        window.onload = function () {
+            noBack();
+        }
+        function noBack() {
+            window.history.forward();
+        }
+</script>
+    <link href="Content/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <asp:ContentPlaceHolder ID="HeadContent" runat="server">
+    </asp:ContentPlaceHolder>
+   <meta charset="utf-8"/>
+    <meta name="robots" content="noindex"/>
+
+    
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link href="Content/bootstrap.css" rel="stylesheet" type="text/css" />
+    <link href="Content/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <style type="text/css">
+    
+
+
+a,
+a:focus,
+a:hover {
+  color: #fff;
+}
+
+/* Custom default button */
+.btn-default,
+.btn-default:hover,
+.btn-default:focus {
+  color: #333;
+  text-shadow: none; /* Prevent inheritence from `body` */
+  background-color: #fff;
+  border: 1px solid #fff;
+}
+
+
+/*
+ * Base structure
+ */
+
+html,
+body {
+/*css for full size background image*/
+    background: url(images/m1.jpg) no-repeat center center fixed; 
+ 
+  -webkit-background-size: cover;
+  
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  
+  height: 100%;
+  background-color: #060;
+  color: #fff;
+  text-align: center;
+  text-shadow: 0 1px 3px rgba(0,0,0,.5);
+ 
+}
+
+/* Extra markup and styles for table-esque vertical and horizontal centering */
+.site-wrapper {
+  display: table;
+  width: 100%;
+  height: 100%; /* For at least Firefox */
+  min-height: 100%;
+  -webkit-box-shadow: inset 0 0 100px rgba(0,0,0,.5);
+          box-shadow: inset 0 0 100px rgba(0,0,0,.5);
+}
+.site-wrapper-inner {
+  display: table-cell;
+  vertical-align: top;
+}
+.cover-container {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/* Padding for spacing */
+.inner {
+  padding: 30px;
+}
+
+
+/*
+ * Header
+ */
+.masthead-brand {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.masthead-nav > li {
+  display: inline-block;
+}
+.masthead-nav > li + li {
+  margin-left: 20px;
+}
+.masthead-nav > li > a {
+  padding-right: 0;
+  padding-left: 0;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff; /* IE8 proofing */
+  color: rgba(255,255,255,.95);
+  border-bottom: 2px solid transparent;
+}
+.masthead-nav > li > a:hover,
+.masthead-nav > li > a:focus {
+  background-color: transparent;
+  border-bottom-color: #a9a9a9;
+  border-bottom-color: rgba(255,255,255,.25);
+}
+.masthead-nav > .active > a,
+.masthead-nav > .active > a:hover,
+.masthead-nav > .active > a:focus {
+  color: #fff;
+  border-bottom-color: #fff;
+}
+
+@media (min-width: 768px) {
+  .masthead-brand {
+    float: left;
+  }
+  .masthead-nav {
+    float: right;
+  }
+}
+
+
+/*
+ * Cover
+ */
+
+.cover {
+  padding: 0 20px;
+}
+.cover .btn-lg {
+  padding: 10px 20px;
+  font-weight: bold;
+}
+
+
+/*
+ * Footer
+ */
+
+.mastfoot {
+  color: #999; /* IE8 proofing */
+  color: rgba(255,255,255,.5);
+}
+
+
+/*
+ * Affix and center
+ */
+
+@media (min-width: 768px) {
+  /* Pull out the header and footer */
+  .masthead {
+    position: fixed;
+    top: 0;
+  }
+  .mastfoot {
+    position: fixed;
+    bottom: 0;
+  }
+  /* Start the vertical centering */
+  .site-wrapper-inner {
+    vertical-align: middle;
+  }
+  /* Handle the widths */
+  .masthead,
+  .mastfoot,
+  .cover-container {
+    width: 100%; /* Must be percentage or pixels for horizontal alignment */
+  }
+}
+
+@media (min-width: 992px) {
+  .masthead,
+  .mastfoot,
+  .cover-container {
+    width: 700px;
+  }
+}
+
+a:hover
+{
+   color:Maroon
+   
+}
+    </style>
+   
+</head>
+<body  onpageshow="if (event.persisted) noBack();">
+ <form id="Form1" runat="server">
+    <div class="page">
+        <div class="header">
+            <div class="title">
+              
+            </div>
+            
+            <div class="clear hideSkiplink">
+                
+            </div>
+        </div>
+        <div class="main">
+            <asp:ContentPlaceHolder ID="MainContent" runat="server"/>
+        </div>
+        <div class="clear">
+        </div>
+    </div>
+    <div class="footer">
+        
+    </div>
+  <div class="site-wrapper">
+  <div class="site-wrapper-inner">
+    <div class="cover-container">
+      <div class="masthead clearfix">
+        <h1 style="color:white;">
+                    Welcome to ERCS
+                </h1>
+         <h2>
+        &nbsp;</h2>
+<h2>
+        &nbsp;</h2>
+<h2>
+        &nbsp;</h2>
+
+     <div class="jumbotron" 
+                
+                
+              
+              style=" background-color:#163547;opacity:0.5;  position: absolute; top: 105px; left: -113px; width: 965px; border-radius:60px; height: 314px;">
+    </div>
+          <p style=" position: absolute; top: 148px; left: -1px; width: 762px; height: 146px; font-family:Lucida Calligraphy; font-size:x-large; color:#f2cc35" >
+              <strong>ERCS is an online result and railway concession website. </br>Since, the process of appplying for concession was manual we attempted to automate it.</br> Moreover,the result of a student is displayed in a distinct and easy to understand manner. </br>This was the shell idea of Ankit Shah developed cumulatively by Ankit Shah,Varun Mukherjee and Dennis Mistry  </strong></p>
+         
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+      <p class="lead">
+          &nbsp;&nbsp;&nbsp;
+          <a  style="color:Maroon;background-color:#fcfc5d; border-radius:30px; position:absolute; top: 496px; left: 227px; width: 230px;"  
+              href="RoleSelect.aspx">&nbsp;&nbsp; Getting Started&nbsp;&nbsp;
+        </a></p>
+      </div>
+      <div class="mastfoot">
+        <div class="inner">                    
+        <p style="color:white;">© AVD ~ </p>
+        </div>
+      </div>
+    </div>
+</div>
+</div>
+
+
+  </form>
+</body>
+</html>
